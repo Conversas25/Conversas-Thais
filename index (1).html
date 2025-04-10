@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento Confirmado</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #4CAF50;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pagamento Confirmado!</h1>
+    <p>O envio do pagamento foi realizado.<br>
+    Aperte no botão "OK" e você será redirecionado para ter sua consulta com a Thais.</p>
+    <button onclick="redirecionar()">OK</button>
+  </div>
+
+  <script>
+    function redirecionar() {
+      // Redireciona para o link do WhatsApp da Thais
+      window.location.href = "https://bit.ly/WattsappConsultas";
+    }
+  </script>
+</body>
+</html>
